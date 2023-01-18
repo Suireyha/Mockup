@@ -35,7 +35,7 @@ body{
 }
 
 .uni{
-    background: transparent;
+    background-image: url(./assets/bubblebackground.png);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -156,7 +156,7 @@ body{
 
 .minfo{
     background: #212121;
-    height: 600px;
+    height: 100%;
 }
 
 .minfo .label{
@@ -214,6 +214,10 @@ body{
     background-image: url(./assets/svgtext.png);
     background-repeat: no-repeat;
     height: auto;
+}
+
+#svgbottom{
+    background-image: url(./assets/bubblesvg.png);
 }
 
 .path{
