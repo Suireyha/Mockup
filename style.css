@@ -63,8 +63,12 @@ body{
     text-decoration: none;
 }
 
+.logo{
+
+}
+
 .imagemain{
-    background-image: url(./assets/bubbleban.png);
+    background-image: url(./assets/bubbleban2.png);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -77,7 +81,7 @@ body{
 
 #logdiv{
     width: 110px;
-    margin-right: 20px;
+    margin-right: 40px;
     display: flex;
     justify-content: space-between;
     
@@ -171,7 +175,7 @@ body{
 .card{
     flex: 0 10 auto;
     align-content: center;
-    height: 450px;
+    height: 400px;
     background-color: #1B1B1B;
     width: 300px;
     background-image: url(./assets/bubblelarge.png);
@@ -180,12 +184,13 @@ body{
     margin: 10px;
 }
 
-.card .label{
+.card > .label,
+.card > .icon{
     color: white;
     align-self: center;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 90px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 #cardfirst{
@@ -230,12 +235,21 @@ body{
     flex-direction: column;
 }
 
-.label{
-    font-family: 'Quicksand', sans-serif;
+.label, .icon{
     font-weight: bold;
     font-size: 35px;
     color: white;
     align-self: center;
+}
+
+.label{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.icon{
+    font-size: 50px;
+    align-self: center;
+    text-align: center;
 }
 
 .contBtns{
@@ -295,11 +309,35 @@ body{
     transition: .3s all;
 }
 
+.bar{
+    width: 260px;
+}
+
 .btn:hover{
     border-color: rgb(75, 223, 75);
     box-shadow: 0 0 10px rgb(75, 223, 75);
     color: white;
     cursor: grabbing;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #101010;
+    height: 100px;
+}
+
+.footer > *{
+    align-self: center;
+}
+
+.footer :first-child, .banner :first-child{
+    margin-left: 20px;
+}
+
+.footer :last-child{
+    margin-right: 20px;
 }
 
 .img{
