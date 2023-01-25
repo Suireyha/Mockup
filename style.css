@@ -25,7 +25,7 @@ html::-webkit-scrollbar-thumb:hover{
 }
 
 body{
-    background: #212121;
+    background: #1b1b1b;
     width: 100%;
     height: 100%;
     display: flex;
@@ -42,6 +42,76 @@ body{
     overflow-y: hidden;
     height: 94vh;
 
+}
+
+.unishop{
+    margin: 20px 0 20px 0;
+    background-image: url(./assets/bubblebackground.png);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    flex: 1 2 auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: auto;
+    height: 100%;
+    overflow-wrap: wrap;
+}
+
+.shopcont{
+    height: 400px;
+
+    gap: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 2 2 auto;
+}
+
+.shopitem{
+    display: grid;
+    grid-template-columns: 
+    "label label"
+    "shop-preview shop-preview"
+    "cont cont";
+    background-color: #1b1b1b;
+    height: 400px;
+    width: 350px;
+    max-width: 500px;
+    border-radius: 25px;
+    border: solid 2px #323232;
+    flex: 1 2 350px;
+    transition: .2s all;
+}
+
+.shopitem > .label{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.shopitem > .btn{
+    justify-self: center;
+    width: 150px;
+}
+
+.shopitem > .banEl{
+    justify-self: center;
+}
+
+.shopitem:hover{
+    width: 360px;
+    height: 412px;
+    border-color: #606060;
+    cursor: grabbing;
+}
+
+.shop-preview{
+    width: 100%;
+    height: auto;
+    flex: 1 1 auto;
+    -webkit-box-reflect: below -14px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.514));
 }
 
 .banner{

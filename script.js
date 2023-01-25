@@ -1,4 +1,5 @@
 const loginbtn = document.querySelector('.logbtn');
+const shopcont = document.querySelector('.unishop');
 const regbtn = document.querySelector('.regbtn');
 const confirm = document.querySelector('#confirm');
 const logdiv = document.querySelector('.logdiv');
@@ -68,6 +69,18 @@ regbtn.addEventListener('click', ()=>{
         openLoginBox();
     }
     
+})
+
+document.defaultView.addEventListener('resize', ()=>{
+    if (shopcont.offsetWidth > 1115){
+        shopcont.setAttribute('style', "grid-template-columns: repeat(3, 1fr)");
+    }
+    else if (shopcont.offsetWidth < 720){
+        shopcont.setAttribute('style', "grid-template-columns: 1fr");
+    }
+    else{
+        shopcont.setAttribute('style', "grid-template-columns: repeat(2, 1fr)");
+    }
 })
 
 confirm.addEventListener('click', ()=>{
