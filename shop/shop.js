@@ -6,7 +6,7 @@ const confirmShop = document.querySelector('#confirm-two')
 const logdiv = document.querySelector('.logdiv');
 const uni = document.querySelector('.uni');
 const label = document.querySelector('.label');
-const loginbox = document.querySelector('.loginboxS');
+const loginbox = document.querySelector('.loginbox');
 const loglbl = document.getElementById('loglbl');
 
 var logbool = false;

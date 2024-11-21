@@ -18,8 +18,6 @@ html::-webkit-scrollbar-thumb:hover{
     cursor: grab;
 }
 
-
-
 *{
     margin: 0;
 }
@@ -135,6 +133,18 @@ body{
 
 .logo{
 
+}
+
+.frontlayer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    height: 1px;
+    z-index: 9;
+    flex: 0 0 1;
 }
 
 .imagemain{
